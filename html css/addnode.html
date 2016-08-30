@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+<link rel="stylesheet" href="wikiglyphs.css">
+<title>GLAMpipe Add node</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="vbox">
+<header><a href="projects.html"><span class="title sitetitle">GLAMpipe</span></a></header>
+
+<content class="main hbox">
+  <pipe>
+    <div class="pageheader">
+      <div class="title pagetitle">Susanna's Ajapaik BL</div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Collections</span> <a href="#">Add collection</a></div>
+      <div class="boxright">
+        <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
+        <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
+        <div>1 / 3</div>
+        <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxleft">
+        <div class="boxtag">Collection</div>
+        <div class="title boxtitle">BL Pics</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross icon boxicon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="box source inpipe">
+      <div class="boxleft">
+        <div class="boxtag">Source</div>
+        <div class="title boxtitle">BL Pics</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross boxicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Nodes</span> <a href="#">Add node</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Choose node type</span></div>
+      </div>
+      <div class="infotext">With a transformation node you can manipulate your data.</div>
+      <div class="optionlist">
+        <button class="accordion transform">
+        <p class="listtitle">Transform data</p>
+        <p class="listtext">Modify your data, create wikitext and more.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub transform">String manipulation</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Extract</p>
+              <p class="listtext">Extract some piece from string</p>
+            </div>
+            </a> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Lowercase</p>
+              <p class="listtext">Convert string to lowercase.</p>
+            </div>
+            </a> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Regular expression search</p>
+              <p class="listtext">Extract some piece from string by regular expression</p>
+            </div>
+            </a> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Search and Replace</p>
+              <p class="listtext">Search and replace a string. You can use regular expressions.</p>
+            </div>
+            </a> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Split</p>
+              <p class="listtext">Split field to an array.</p>
+            </div>
+            </a> </div>
+          <button class="accordion sub transform">Field manipulation</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Combine fields</p>
+              <p class="listtext">Combine string fields with arbitrary strings</p>
+            </div>
+            </a> </div>
+          <button class="accordion sub transform">Georeferencing</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Convert bbox to GeoJSON polygon</p>
+              <p class="listtext">Convert bounding box to GeoJSON Polygon</p>
+            </div>
+            </a> </div>
+          <button class="accordion sub transform">Wikimedia</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption transform">
+              <p class="listtitle">Create wikitext</p>
+              <p class="listtext">Produce wikitext output based on template</p>
+            </div>
+            </a> </div>
+        </div>
+        <button class="accordion lookup">
+        <p class="listtitle">Lookup</p>
+        <p class="listtext">Look up data from APIs or local collections.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub lookup">API</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption lookup">
+              <p class="listtitle">Ajapaik - image details</p>
+              <p class="listtext">Fetched image details from Ajapaik</p>
+            </div>
+            </a> <a href="nodeparams.html">
+            <div class="listoption lookup">
+              <p class="listtitle">Commons - wikitext</p>
+              <p class="listtext">Wikimedia commons: Fetch revisions (wikitext)</p>
+            </div>
+            </a>
+            <div class="listoption lookup">
+              <p class="listtitle">FINNA - rawData</p>
+              <p class="listtext">Hakee rawData -tiedot FINNAsta</p>
+            </div>
+            <div class="listoption lookup">
+              <p class="listtitle">Flickr - image info</p>
+              <p class="listtext">Flickr: Fetch image data (requires an API key)</p>
+            </div>
+            <div class="listoption lookup">
+              <p class="listtitle">Flickr - image urls</p>
+              <p class="listtext">Flickr: Fetch image URLs for different sizes (requires an API key)</p>
+            </div>
+            <div class="listoption lookup">
+              <p class="listtitle">Internet Archive metadata</p>
+              <p class="listtext">Fetch metadata of individual items from Internet Archive.</p>
+            </div>
+          </div>
+          <button class="accordion sub lookup">File</button>
+          <div class="panel">
+            <div class="listoption lookup">
+              <p class="listtitle">Read file sizes</p>
+              <p class="listtext">Read file sizes.</p>
+            </div>
+          </div>
+          <button class="accordion sub lookup">Collection</button>
+          <div class="panel">
+            <div class="listoption lookup">
+              <p class="listtitle">Collection lookup</p>
+              <p class="listtext">Collection lookup. Suitable for example term lookups.</p>
+            </div>
+            <div class="listoption lookup">
+              <p class="listtitle">Collection lookup by ID</p>
+              <p class="listtext">Collection lookup for clustered collection. Lookup is based on IDs in original collection.</p>
+            </div>
+          </div>
+        </div>
+        <button class="accordion query">
+        <p class="listtitle">Query data</p>
+        <p class="listtext">Query nodes execute direct queries to the database.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub query">Chart</button>
+          <div class="panel"> <a href="nodeparams.html">
+            <div class="listoption query">
+              <p class="listtitle">Simple chart</p>
+              <p class="listtext">Create a simple chart.</p>
+            </div>
+            </a> </div>
+        </div>
+        <button class="accordion download">
+        <p class="listtitle">Download files</p>
+        <p class="listtext">Download files to your hard drive.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub download">Flickr</button>
+          <div class="panel">
+            <div class="listoption download">
+              <p class="listtitle">Images any size</p>
+              <p class="listtext">Downloads images in any size from Flickr URL (needs Flickr getSizes node).</p>
+            </div>
+            <div class="listoption download">
+              <p class="listtitle">Original images</p>
+              <p class="listtext">Downloads original images from Flickr.</p>
+            </div>
+          </div>
+          <button class="accordion sub download">Basic download</button>
+          <div class="panel">
+            <div class="listoption download">
+              <p class="listtitle">File</p>
+              <p class="listtext">Download file from URL.</p>
+            </div>
+          </div>
+          <button class="accordion sub download">Internet Archive</button>
+          <div class="panel">
+            <div class="listoption">
+              <p class="listtitle">Images</p>
+              <p class="listtext">Downloads images from Internet Archive.</p>
+            </div>
+          </div>
+        </div>
+        <button class="accordion export">
+        <p class="listtitle">Export data</p>
+        <p class="listtext">Export files (XML, JSON etc.) or send data to APIs.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub export">Export XML</button>
+          <div class="panel">
+            <div class="listoption export">
+              <p class="listtitle">XML</p>
+              <p class="listtext">Export collection as XML file. Very simple version. Do not export objects.</p>
+            </div>
+          </div>
+        </div>
+        <button class="accordion upload">
+        <p class="listtitle">Upload files and data</p>
+        <p class="listtext">Upload files and data to web services.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub upload">MediaWiki bot</button>
+          <div class="panel">
+            <div class="listoption upload">
+              <p class="listtitle">Wikimedia Commons files</p>
+              <p class="listtext">Upload files to Wikimedia Commons</p>
+            </div>
+            <div class="listoption upload">
+              <p class="listtitle">Wikimedia Commons wikitext</p>
+              <p class="listtext">Upload wikitext to Wikimedia Commons</p>
+            </div>
+          </div>
+        </div>
+        <button class="accordion file">
+        <p class="listtitle">File operations</p>
+        <p class="listtext">Inspect files, create thumbnails etc.</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub file">Hash</button>
+          <div class="panel">
+            <div class="listoption file">
+              <p class="listtitle">MD5</p>
+              <p class="listtext">Calculate MD5 sum for a file.</p>
+            </div>
+          </div>
+        </div>
+        <button class="accordion viz">
+        <p class="listtitle">Data visualizations</p>
+        <p class="listtext">Text</p>
+        </button>
+        <div class="panel">
+          <button class="accordion sub viz">Chart</button>
+          <div class="panel">
+            <div class="listoption viz">
+              <p class="listtitle">Count chart</p>
+              <p class="listtext">Count records by certain field and draw chart</p>
+            </div>
+          </div>
+          <button class="accordion sub viz">Cluster</button>
+          <div class="panel">
+            <div class="listoption viz">
+              <p class="listtitle">Simple chart</p>
+              <p class="listtext">Create a simple chart based on clustered collection (for large datasets).</p>
+            </div>
+          </div>
+          <button class="accordion sub viz">Interactive</button>
+          <div class="panel">
+            <div class="listoption viz">
+              <p class="listtitle">VIAF - interactive lookup</p>
+              <p class="listtext">Interactive VIAF lookup (DOES NOT SAVE YET!)</p>
+            </div>
+            <div class="listoption viz">
+              <p class="listtitle">Georeferencer for maps</p>
+              <p class="listtext">Add control point to maps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </pipe>
+  <workspace> </workspace>
+</content>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</body>
+</html>

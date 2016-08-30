@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i" rel="stylesheet">
+<link rel="stylesheet" href="wikiglyphs.css">
+<title>GLAMpipe style</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="vbox">
+<header><a href="projects.html"><span class="title sitetitle">GLAMpipe</span></a></header>
+
+<content class="main hbox space-between">
+  <pipe>
+    <div class="pageheader">
+      <div class="title pagetitle">Susanna's Ajapaik BL</div>
+      <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Collections</span> <a href="#">Add collection</a></div>
+      <div class="boxright">
+        <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
+        <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
+        <div>1 / 3</div>
+        <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxleft">
+        <div class="boxtag">Collection</div>
+        <div class="title boxtitle">BL Pics</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross icon boxicon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Choose source</span></div>
+      </div>
+      <div class="infotext">With a source node you can import your data to GLAMpipe. The source can be a file, an API, a directory or a GLAMpipe group.</div>
+      <div class="optionlist">
+      <button class="accordion source">
+      <p class="listtitle">File</p>
+      <p class="listtext">Your data can be in a file (xml, csv, tsv or json).</p>
+      </button>
+      <div class="panel">
+        <p><a href="sourceparams.html">Upload csv file</a></p>
+      </div>
+      <button class="accordion source">
+      <p class="listtitle">API</p>
+      <p class="listtext">Your data can be imported from an API.</p>
+      </button>
+      <div class="panel">
+        <p><a href="sourceparams.html">Ajapaik</a></p>
+        <p><a href="sourceparams.html">Finna</a></p>
+        <p><a href="sourceparams.html">Flickr</a></p>
+        <p><a href="sourceparams.html">Map Warper</a></p>
+      </div>
+      <button class="accordion source">
+      <p class="listtitle">Directory</p>
+      <p class="listtext">Your data can be imported from your hard drive.</p>
+      </button>
+      <div class="panel">
+        <p>This option is currently only available in the desktop version, not in the online version.</p>
+      </div>
+      <button class="accordion source">
+      <p class="listtitle">Group</p>
+      <p class="listtext">Your data can be an existing GLAMpipe grouping.</p>
+      </button>
+      <div class="panel">
+        <p><a href="sourceparams.html">Group fields</a></p>
+      </div>
+      </div>
+    </div>
+  </pipe>
+  <workspace> </workspace>
+</content>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</body>
+</html>

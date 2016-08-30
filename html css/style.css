@@ -1,0 +1,615 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: WikiFont;
+    src: url(WikiFont-Glyphs.woff);
+}
+
+html, body, .viewport {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	font-weight:300;
+	color:#444;
+	background-color: #444;
+	padding: 0px;
+}
+
+a {
+	color: #347BFF;
+	text-decoration: none;
+	-webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+a:hover {
+	color:#2B67C9;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: #fefefe}
+
+td:first-child, th:first-child {
+	padding-left:20px;
+}
+
+.vbox {
+	    display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:         flex;
+        -webkit-flex-direction: column;
+           -moz-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+}
+
+.hbox {
+display: -webkit-flex;
+display:    -moz-flex;
+display:     -ms-flex;
+display:         flex;
+-webkit-flex-direction: row;
+   -moz-flex-direction: row;
+	-ms-flex-direction: row;
+		flex-direction: row;
+}
+
+.space-between {
+-webkit-justify-content: space-between;
+   -moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+		justify-content: space-between;
+}
+
+.center {
+-webkit-justify-content: center;
+   -moz-justify-content: center;
+	-ms-justify-content: center;
+		justify-content: center;
+}
+
+.main {
+-webkit-flex: 1;
+   -moz-flex: 1;
+	-ms-flex: 1;
+		flex: 1;
+}
+
+header {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	height: 49px;
+	background-color:#FFF;
+	padding-left: 20px;
+	margin-bottom:1px;
+}
+
+content {
+}
+
+workspace {
+	background-color: #f5f5f5;
+	width: 100%;
+	margin-left: 1px;
+	        -webkit-flex: 5;
+           -moz-flex: 5;
+            -ms-flex: 5;
+                flex: 5;
+				overflow:auto;
+}
+
+footer {
+}
+
+pipe {
+	background-color: #EFEFEF;
+	width: 370px;
+	padding-left: 20px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.sitetitle {
+	font-size: 24px;
+}
+
+.pagetitle {
+	font-size: 20px;
+}
+
+.sectiontitleblock {
+	width:345px;
+	display: -webkit-flex;
+    display: flex;
+	padding: 5px 0px;
+}
+
+.sectiontitle {
+	font-size: 18px;
+	-webkit-align-self: flex-start;
+	align-self: flex-start;
+}
+
+.sectionicon {
+	margin-left: auto;
+}
+
+.box {
+	color:#444;
+	background-color: #FFF;
+	border-radius: 5px;
+	height: 50px;
+	width: 335px;
+	overflow: hidden;
+	padding: 10px 5px 10px 10px;
+	margin-bottom:10px;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+.box:hover {
+	cursor:pointer;
+}
+
+
+.boxleft {
+	-webkit-align-self: flex-start;
+	align-self: flex-start;
+}
+
+.boxright {
+	margin-left: auto;
+	display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: row;
+   flex-direction: row;
+   align-items:center;
+   -webkit-align-items:center;
+}
+
+.boxicon {
+	margin-left: auto;
+}
+
+.boxtitle {
+	font-size: 15px;
+	margin:3px 0px 0px 0px;
+}
+
+.inlinetitle {
+	font-size: 15px;
+}
+
+.inlinetitleblock {
+	width:350px;
+	display: -webkit-flex;
+    display: flex;
+	margin-bottom: 5px;
+}
+
+a .inlinetitleblock {
+	color:#444;
+	-webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+a .inlinetitleblock:hover {
+	color:#347BFF;
+	cursor:pointer;
+}
+
+.inlinetitleicon {
+	bottom: -15px;
+	padding-right:10px;
+	margin-left: auto;
+	
+}
+
+.icon {
+	font-size:24px;
+	color:#CFCFCF;
+}
+
+.icon:hover {
+	cursor:pointer;
+	color:#808080;
+}
+
+.pageheader {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	height: 60px;
+	width: 100%;
+}
+a .pageheader {
+	color: #444;
+}
+
+a .pageheader:hover {
+	color: #347BFF;
+	cursor:pointer;
+}
+
+.fatbox {
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+	left: -10px;
+	width: 330px;
+	padding: 20px;
+	margin-bottom:10px;
+}
+
+.wide {
+	width:100%;
+}
+
+.optionlist {
+	padding-top:.5em;
+}
+
+.listoption {
+	color:#808080;
+	padding: .5em 0px .5em 0px;
+	margin: 0px;
+	border-bottom:dotted #efefef 1px;
+}
+
+a .listoption {
+	color: #808080;
+	cursor:pointer;
+}
+
+.listoption:hover {
+	border-left:solid 5px;
+	padding-left:.5em;
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.panel .listoption {
+	font-size:12px;
+	padding-left:2em;
+}
+
+.listtitle {
+	font-weight: 400;
+	margin: 0px;
+	color:#444;
+}
+
+.listtext {
+	margin: 0px;
+	font-weight: 300;
+}
+
+.infotext {
+	font-style:italic;
+	font-weight:300;
+}
+
+.boxtag {
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 11px;
+	margin: 0px;
+}
+.boxtext {
+	margin: 0px;
+}
+
+button.accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+	text-align: left;
+	color:#444;
+	padding: .5em 0;
+	margin: 0px;
+	outline: none;
+	background-color:white;
+	font-size:13px;
+	border-bottom:solid #efefef 1px;
+}
+
+button.accordion.active, button.accordion:hover {
+	border-left:solid 5px;
+	padding-left:.5em;
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+
+.inpipe {
+	border-left:solid 10px;
+	width: 325px;
+	-webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.inpipe:hover {
+}
+
+.source {
+	border-left-color: rgba(52,123,255,.5) !important;
+}
+
+.source:hover {
+	border-left-color: rgba(52,123,255,1) !important;
+}
+
+.lookup {
+	border-left-color: rgba(232, 176, 190,.5) !important;
+}
+
+.lookup:hover {
+	border-left-color: rgba(232, 176, 190,1) !important;
+}
+
+.transform {
+	border-left-color: rgba(255,181,13,.5) !important;
+}
+
+.transform:hover {
+	border-left-color: rgba(255,181,13,1) !important;
+}
+
+.viz {
+	border-left-color: rgba(185,70,70,1) !important;
+}
+
+.query {
+	border-left-color: rgba(64,159,191,1) !important;
+}
+
+.upload {
+	border-left-color: rgba(128, 83, 172,1) !important;
+}
+
+.export {
+	border-left-color: rgba(143,215,239,1) !important;
+}
+
+.download {
+	border-left-color: rgba(159,191,64,1) !important;
+}
+
+.file {
+	border-left-color: rgba(181, 227, 181,1) !important;
+}
+
+.settingscontainer {
+	background-color: rgba(255,255,255,0.5);
+	padding: 0px 20px;
+}
+
+.settingsheader {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	height: 60px;
+}
+
+.settingstitle {
+	font-size: 18px;
+}
+
+.settings {
+}
+
+.stbl {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 3em 0;
+	padding: 0;
+}
+
+.stblhdr {
+}
+
+.stblcell {
+	box-sizing: border-box;
+	flex-grow: 1;
+	width: 100%;  // Default to full width
+	padding: 0.8em 1.2em;
+	overflow: hidden; // Or flex might break
+	list-style: none;
+}
+  
+.stbl2c > .stblcell  { width: 50%; }
+.stbl3c > .stblcell  { width: 33.33%; }
+.stbl4c > .stblcell  { width: 25%; }
+.stbl5c > .stblcell  { width: 20%; }
+.stbl6c > .stblcell  { width: 16.6%; }
+
+.datacontainer {
+}
+
+.dataheader {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	height: 60px;
+	padding: 0 20px;
+}
+
+.data {
+	overflow-x:auto;
+}
+
+input[type=text] {
+    font-size:13px;
+	color:#808080;
+	font-weight:300;
+	width: 330px;
+    padding: .5em 0;
+    margin: 8px 0;
+	border: none;
+    border-bottom: 1px solid #efefef;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	background: transparent;
+}
+
+input[type=text]:focus {
+    border-bottom: 1px solid #444;
+}
+
+.button {
+    background-color: #347BFF;
+    border: none;
+    color: white;
+    padding:.6em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 5px;
+    cursor: pointer;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+	min-width:80px;
+}
+
+.cancel {
+	background-color: white;
+	color: #808080;
+	border: solid 1px #efefef;
+}
+
+.button:hover {
+	box-shadow:0 1px rgba(0,0,0,.1), inset 0 -3px rgba(0,0,0,.2);
+	border-bottom-color:#ccc;
+	outline:0
+}
+
+div.panel {
+    display: none;
+}
+
+div.panel.show {
+    display: block !important;
+}
+
+.group {
+	font-weight:500;
+}
+
+.sub {
+	font-weight:300;
+	padding-left:1em !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #efefef;
+    border-left: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #777;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+	text-align: left;
+    margin-top:5px;
+	background-color: #fff;
+    color: #808080;
+	min-width: 330px;
+    padding: .8em 1em;
+    font-size: 13px;
+    border: solid 1px #efefef;
+    cursor: pointer;
+	border-radius:3px;
+	font-weight:300;
+	outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 328px;
+	box-shadow:0 1px rgba(0,0,0,.1), inset 0 -3px rgba(0,0,0,.2);
+	border-left: solid 1px #efefef;
+	border-right: solid 1px #efefef;
+	border-radius:3px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: .8em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #347BFF;
+	color:white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+	z-index:9999 !important;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	border-bottom-color:white;
+	outline:0
+}

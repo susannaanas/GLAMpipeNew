@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet" />
+<link rel="stylesheet" href="wikiglyphs.css" />
+<title>GLAMpipe Node parameters</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="vbox">
+<header> <a href="projects.html"  class="title sitetitle">GLAMpipe</a> </header>
+<content class="main hbox space-between">
+  <pipe>
+    <div class="pageheader">
+      <div class="title pagetitle">Susanna's Ajapaik BL</div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Collections</span> <a href="#">Add collection</a></div>
+      <div class="boxright">
+        <div class="wikiglyph wikiglyph-stripe-menu icon" aria-hidden="true"></div>
+        <div class="wikiglyph wikiglyph-caret-left icon" aria-hidden="true"></div>
+        <div>1 / 3</div>
+        <div class="wikiglyph wikiglyph-caret-right icon" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxleft">
+        <div class="boxtag">Collection</div>
+        <div class="title boxtitle">BL Pics</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross icon boxicon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Sources</span> <a href="#">Add source</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="box source inpipe">
+      <div class="boxleft">
+        <div class="boxtag">Source</div>
+        <div class="title boxtitle">BL Pics</div>
+        <div class="boxtext">See if these could be a good source</div>
+      </div>
+      <div class="wikiglyph wikiglyph-cross boxicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="sectiontitleblock">
+      <div><span class="title sectiontitle">Nodes</span> <a href="#">Add node</a></div>
+      <div class="wikiglyph wikiglyph-user-talk sectionicon icon" aria-hidden="true"></div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Extract</span></div>
+      </div>
+      <div class="infotext">Extract a substring from a string, save in a new field.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Extract fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_xtr" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Lowercase</span></div>
+      </div>
+      <div class="infotext">Convert a string into lowercase, save in a new field.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Lowercase fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_lwr" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Regular expression search</span></div>
+      </div>
+      <div class="infotext">Extract a substring from a string with a regular expression, save in a new field.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Regexp fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_rgx" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Search and replace</span></div>
+      </div>
+      <div class="infotext">Search and replace a substring, save in a new field. You can use regular expressions.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Search and replace fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_snr" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Split</span></div>
+      </div>
+      <div class="infotext">Split field to an array, save in a new field.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Split fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_spl" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Combine fields</span></div>
+      </div>
+      <div class="infotext">Combine string fields with arbitrary strings, save in a new field.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Combine fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_cmb" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div><span class="title inlinetitle">Bounding box to GeoJSON</span></div>
+      </div>
+      <div class="infotext">Convert a bounding box to a GeoJSON polygon.</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Bounding box to GeoJSON fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Field</p>
+          <p class="listtext">
+            <label for="description"></label>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content"> <a href="#">Collection 1</a> <a href="#">Collection 2</a> <a href="#">Collection 3</a> </div>
+          </div>
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Output field suffix</p>
+          <p class="listtext">
+            <label for="description"></label>
+            <input name="description" type="text" id="description" value="_bbx" />
+          </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+    <div class="fatbox">
+      <div class="inlinetitleblock">
+        <div class="title inlinetitle">Ajapaik image details lookup</div>
+      </div>
+      <div class="infotext">Fetches image details from Ajapaik</div>
+      <div class="optionlist">
+        <div class="listitem">
+          <p class="listtitle">Title</p>
+          <p class="listtext">
+            <label for="title"></label>
+            <input name="title" type="text" id="title" value="Ajapaik image details fieldname" />
+          </p>
+        </div>
+        <div class="listitem">
+          <p class="listtitle">Parameters</p>
+          <p class="listtext"> No parameters. </p>
+        </div>
+      </div>
+      <div class="hbox center"> <a href="#">
+        <div class="button cancel">Cancel</div>
+        </a> <a href="3nodes.html">
+        <div class="button">Create  node</div>
+        </a> </div>
+    </div>
+  </pipe>
+  <workspace> </workspace>
+</content>
+</body>
+</html>
